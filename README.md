@@ -1,24 +1,14 @@
-# README
+# MovideDB Proxy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MovieDB Proxy Search. Queries are cached for a period of time before making additional requests.
 
-Things you may want to cover:
+## Try it
+```
+bundle install
 
-* Ruby version
+yarn install
 
-* System dependencies
+rails s
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://localhost:3000/api/v1/movies/search?query=Gump
+```
