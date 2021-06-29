@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: api_proxy_production
+  database: <%= ENV['DATABASE_URL'] %>
   username: api_proxy
   password: <%= ENV['API_PROXY_DATABASE_PASSWORD'] %>
